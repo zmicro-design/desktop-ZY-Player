@@ -86,12 +86,12 @@ install() {
     os::download $cache_file $url
   fi
 
-  local app_name="ZY-Player.app"
+  local app_name="ZY Player.app"
   # install
   log::info "[$(timestamp)][desktop][$name] installing $cache_file ..."
   case $arch in
   arm64 | amd64)
-    install::dmg $cache_file ${name} "${app_name}" "/Volumes/ZY-Player"
+    install::dmg $cache_file ${name} "${app_name}" "/Volumes/ZY Player ${DESKTOP_CORE_VERSION#v}"
     ;;
   *)
     log::error "[$(timestamp)] unsupport arch: $arch"
@@ -101,7 +101,7 @@ install() {
 
   # actve
   log::info "[$(timestamp)][desktop] active app without warning which app is damaged and can't be opened ..."
-  sudo xattr -rd com.apple.quarantine /Applications/${app_name}
+  sudo xattr -rd com.apple.quarantine "/Applications/${app_name}"
   if [ "$?" != "0" ]; then
     log::error "[$(timestamp)][desktop] failed to active app: ${app_name} (command: sudo xattr -rd com.apple.quarantine /Applications/${app_name})."
     return 1

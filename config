@@ -8,6 +8,6 @@ export DESKTOP_CORE_ORG="Hunlongyu"
 export DESKTOP_CORE_RELEASE_DOWNLOAD="https://github.com/${DESKTOP_CORE_ORG}/ZY-Player/releases/download"
 
 export DESKTOP_CORE_CHECKSUMS=(
-  v2.8.8#darwin#arm64#9fa18ccd04bf1b7bed0311613c11c6b52f67f24193a211af92482f65ff745446
-  v2.8.8#darwin#amd64#cbe42cf8ecc33b8e0c23849e2743256a8dcd1895c936b3d73d5ba96c5671bc6d
+  v2.8.8#darwin#arm64#c00d2315d564f800fbb6d67fb3e3620276cfc0669737b20fdbc54d39b87596ab
+  v2.8.8#darwin#amd64#c00d2315d564f800fbb6d67fb3e3620276cfc0669737b20fdbc54d39b87596ab
 )
